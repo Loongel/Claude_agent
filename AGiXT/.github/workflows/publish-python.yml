@@ -1,0 +1,14 @@
+name: Publish python package
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  build-agixt-pypi:
+    uses: localagi/AI-pipeline/.github/workflows/operation-python-build-publish.yml@v4
+    secrets:
+      PYPI_API_TOKEN: ${{ secrets.PYPI_API_TOKEN }}

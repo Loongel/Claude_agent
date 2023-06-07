@@ -1,0 +1,39 @@
+__pycache__/
+*.py[cod]
+*$py.class
+
+.env
+env/
+.venv
+*venv/
+session.txt
+.vscode/
+.idea/
+agents/*
+models/*
+llama.cpp
+node_modules
+memories/*
+WORKSPACE/*
+*.util.py
+agents/*
+frontend/
+Agent-LLM-Frontend/
+*.code-workspace
+
+# probably mounted data
+agixt/agents/*
+agixt/data/*
+agixt/WORKSPACE/*
+agixt/models/*
+
+# docs generation
+_book/
+
+# 3rd party
+package.json
+package-lock.json
+*cookies.json
+
+# testing
+**/.ipynb_checkpoints/
